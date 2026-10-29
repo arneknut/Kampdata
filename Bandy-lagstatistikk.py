@@ -3,6 +3,8 @@ Parser for NBF Bandy Tournament Teams API
 Endpoint: /api/v1/nbf/bandy/tournament/teams/{tournament_id}
 """
 
+import argparse
+
 import requests
 import json
 from dataclasses import dataclass, field
@@ -13,7 +15,7 @@ from datetime import datetime
 # ── Config ────────────────────────────────────────────────────────────────────
 
 BASE_URL = "https://api.app04.nbf.clh.no/api/v1/nbf/bandy"
-TOURNAMENT_ID = 439465
+TOURNAMENT_ID = 0
 TTL = 180
 
 HEADERS = {
@@ -133,9 +135,23 @@ def print_report(teams: list[Team], tournament_id: int, raw: dict) -> None:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    print(f"Fetching tournament {TOURNAMENT_ID} …")
+
+    parser = argparse.ArgumentParser(
+        description="Henter spillerstatistikk"
+    )
+    parser.add_argument(
+        "--tournament-id", type=int, default=0,
+        help="Kamp-ID fra URL-fragmentet (standard: 8357726)"
+    )
+    parser.add_argument(
+        "--output", default="Spillere.json",
+        help="Filnavn for JSON-utdata (standard: Spillere.json)"
+    )
+    args = parser.parse_args()
+
+    print(f"Fetching tournament {args.tournament_id} …")
     try:
-        raw = fetch_tournament_teams(TOURNAMENT_ID)
+        raw = fetch_tournament_teams(args.tournament_id)
     except requests.HTTPError as e:
         print(f"HTTP error: {e.response.status_code} — {e.response.text}")
         return
@@ -144,12 +160,12 @@ def main() -> None:
         return
 
     # Optionally save raw response for inspection
-    with open("raw_response.json", "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         json.dump(raw, f, ensure_ascii=False, indent=2)
-    print("Raw response saved to raw_response.json")
+    print(f"Raw response saved to {args.output}")
 
     teams = parse_teams(raw)
-    print_report(teams, TOURNAMENT_ID, raw)
+    print_report(teams, args.tournament_id, raw)
 
 
 if __name__ == "__main__":

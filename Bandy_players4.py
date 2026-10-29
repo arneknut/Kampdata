@@ -73,6 +73,7 @@ def extract_team_players(org_id: int, name: str, players: list[dict]) -> dict:
     team_players = [
         {
             "number": p.get("number"),
+            "personId": p.get("personId"),
             "firstName": p.get("firstName", ""),
             "lastName": p.get("lastName", ""),
             "fullName": f"{p.get('firstName', '')} {p.get('lastName', '')}".strip(),

@@ -1,0 +1,459 @@
+{
+  "matchId": 8357726,
+  "homeTeam": {
+    "teamOrgId": 890498,
+    "team": "Ullevål IL - BKS 1",
+    "players": [
+      {
+        "number": "1",
+        "personId": 9423459,
+        "firstName": "Emilie",
+        "lastName": "Nitteberg",
+        "fullName": "Emilie Nitteberg",
+        "position": "Målvakt",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "3",
+        "personId": 8973999,
+        "firstName": "Vibeke",
+        "lastName": "Tonning",
+        "fullName": "Vibeke Tonning",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "4",
+        "personId": 8820196,
+        "firstName": "Lise Munch",
+        "lastName": "Nordheim",
+        "fullName": "Lise Munch Nordheim",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "5",
+        "personId": 9293119,
+        "firstName": "Lene",
+        "lastName": "Skrettingland",
+        "fullName": "Lene Skrettingland",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "7",
+        "personId": 5549422,
+        "firstName": "Mathilde",
+        "lastName": "Stenstad-Persen",
+        "fullName": "Mathilde Stenstad-Persen",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "8",
+        "personId": 9291594,
+        "firstName": "Ingrid Heien",
+        "lastName": "Bjonge",
+        "fullName": "Ingrid Heien Bjonge",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "9",
+        "personId": 8129045,
+        "firstName": "Sandra Andresen",
+        "lastName": "Follesø",
+        "fullName": "Sandra Andresen Follesø",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "11",
+        "personId": 10232607,
+        "firstName": "Evy Marie",
+        "lastName": "Mellemseter-Nygård",
+        "fullName": "Evy Marie Mellemseter-Nygård",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "12",
+        "personId": 9486737,
+        "firstName": "Hedda-Sofie Storhaug",
+        "lastName": "Bærøe",
+        "fullName": "Hedda-Sofie Storhaug Bærøe",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "13",
+        "personId": 7824658,
+        "firstName": "Oda Louise Bakjord",
+        "lastName": "Hjerkinn",
+        "fullName": "Oda Louise Bakjord Hjerkinn",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "14",
+        "personId": 9182224,
+        "firstName": "Sofie",
+        "lastName": "Mjaaland",
+        "fullName": "Sofie Mjaaland",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "15",
+        "personId": 8446569,
+        "firstName": "Hannah Marie Nygård",
+        "lastName": "Sætrang",
+        "fullName": "Hannah Marie Nygård Sætrang",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "19",
+        "personId": 7798363,
+        "firstName": "Martine Hansen",
+        "lastName": "Bakken",
+        "fullName": "Martine Hansen Bakken",
+        "position": "Utespiller",
+        "captain": true,
+        "played": false
+      },
+      {
+        "number": "21",
+        "personId": 5955109,
+        "firstName": "Stine Emilie",
+        "lastName": "Pedersen",
+        "fullName": "Stine Emilie Pedersen",
+        "position": "Målvakt",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "22",
+        "personId": 9879412,
+        "firstName": "Ingebjørg",
+        "lastName": "Kvaal-Knutsen",
+        "fullName": "Ingebjørg Kvaal-Knutsen",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "23",
+        "personId": 7439843,
+        "firstName": "Laura Andresen",
+        "lastName": "Follesø",
+        "fullName": "Laura Andresen Follesø",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 9276820,
+        "firstName": "Sergey",
+        "lastName": "Gusev",
+        "fullName": "Sergey Gusev",
+        "position": "Trener",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 5417366,
+        "firstName": "Birgitte Taugbøl",
+        "lastName": "Kragset",
+        "fullName": "Birgitte Taugbøl Kragset",
+        "position": null,
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 8191983,
+        "firstName": "Stig Andre",
+        "lastName": "Pedersen",
+        "fullName": "Stig Andre Pedersen",
+        "position": "Målvaktstrener",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 7843637,
+        "firstName": "Pia Cecilie",
+        "lastName": "Sand",
+        "fullName": "Pia Cecilie Sand",
+        "position": "Lagleder 1",
+        "captain": false,
+        "played": false
+      }
+    ]
+  },
+  "awayTeam": {
+    "teamOrgId": 582010,
+    "team": "Ready - BKS 1",
+    "players": [
+      {
+        "number": "1",
+        "personId": 2744015,
+        "firstName": "Karen Solem",
+        "lastName": "Knutsen",
+        "fullName": "Karen Solem Knutsen",
+        "position": "Målvakt",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "3",
+        "personId": 9238845,
+        "firstName": "Mathea Fiva",
+        "lastName": "Myrvoll",
+        "fullName": "Mathea Fiva Myrvoll",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "6",
+        "personId": 9695133,
+        "firstName": "Ella",
+        "lastName": "Møllhausen",
+        "fullName": "Ella Møllhausen",
+        "position": "Utespiller",
+        "captain": true,
+        "played": false
+      },
+      {
+        "number": "7",
+        "personId": 7929569,
+        "firstName": "Maya Lømork",
+        "lastName": "Mansell",
+        "fullName": "Maya Lømork Mansell",
+        "position": null,
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "8",
+        "personId": 6920673,
+        "firstName": "Ebba",
+        "lastName": "Johansson",
+        "fullName": "Ebba Johansson",
+        "position": null,
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "11",
+        "personId": 4076703,
+        "firstName": "Mina Cecilie",
+        "lastName": "Melbye",
+        "fullName": "Mina Cecilie Melbye",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "17",
+        "personId": 10072210,
+        "firstName": "Victoria Aarstrand",
+        "lastName": "Knutsen",
+        "fullName": "Victoria Aarstrand Knutsen",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "18",
+        "personId": 9517148,
+        "firstName": "Rakel Elina",
+        "lastName": "Bryhni",
+        "fullName": "Rakel Elina Bryhni",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "19",
+        "personId": 7398568,
+        "firstName": "Maja Fretland",
+        "lastName": "Førde",
+        "fullName": "Maja Fretland Førde",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "21",
+        "personId": 6175482,
+        "firstName": "Tuva Askmann",
+        "lastName": "Nærby",
+        "fullName": "Tuva Askmann Nærby",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "22",
+        "personId": 6916541,
+        "firstName": "Julie",
+        "lastName": "Møllhausen",
+        "fullName": "Julie Møllhausen",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "30",
+        "personId": 10104264,
+        "firstName": "ADA SANDNES",
+        "lastName": "SUNDSBØ",
+        "fullName": "ADA SANDNES SUNDSBØ",
+        "position": "Målvakt",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "43",
+        "personId": 7707978,
+        "firstName": "Josefine Nesset",
+        "lastName": "Schwabe",
+        "fullName": "Josefine Nesset Schwabe",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "66",
+        "personId": 8853617,
+        "firstName": "Marie",
+        "lastName": "Bolme",
+        "fullName": "Marie Bolme",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "75",
+        "personId": 9517813,
+        "firstName": "Marie Dregler",
+        "lastName": "Nordbø",
+        "fullName": "Marie Dregler Nordbø",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": "97",
+        "personId": 10444654,
+        "firstName": "Katrine",
+        "lastName": "Bolme",
+        "fullName": "Katrine Bolme",
+        "position": "Utespiller",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 1848629,
+        "firstName": "Morten",
+        "lastName": "Dregler",
+        "fullName": "Morten Dregler",
+        "position": "Materialforvalter",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 4430947,
+        "firstName": "Stian Mansell",
+        "lastName": "Lund",
+        "fullName": "Stian Mansell Lund",
+        "position": "Målvaktstrener",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 5938550,
+        "firstName": "Christen",
+        "lastName": "Møllhausen",
+        "fullName": "Christen Møllhausen",
+        "position": "Lagleder 1",
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 8101044,
+        "firstName": "Pernille Nesset",
+        "lastName": "Schwabe",
+        "fullName": "Pernille Nesset Schwabe",
+        "position": null,
+        "captain": false,
+        "played": false
+      },
+      {
+        "number": null,
+        "personId": 10406251,
+        "firstName": "Mattias",
+        "lastName": "Snäll",
+        "fullName": "Mattias Snäll",
+        "position": "Trener",
+        "captain": false,
+        "played": false
+      }
+    ]
+  },
+  "referees": [
+    {
+      "refereeId": 228406,
+      "firstName": "Mats Gunnar",
+      "lastName": "Eriksson",
+      "fullName": "Mats Gunnar Eriksson",
+      "refereeType": "Hoveddommer",
+      "orgName": "Ski og ballklubben Skiold"
+    },
+    {
+      "refereeId": 300569,
+      "firstName": "Sebastian Silkoset",
+      "lastName": "Tunold",
+      "fullName": "Sebastian Silkoset Tunold",
+      "refereeType": "Meddommer",
+      "orgName": "Stabæk IF"
+    },
+    {
+      "refereeId": 312338,
+      "firstName": "Sverre",
+      "lastName": "Strømnes",
+      "fullName": "Sverre Strømnes",
+      "refereeType": "Meddommer",
+      "orgName": "Hamar Idrettslag Hovedlaget"
+    },
+    {
+      "refereeId": 226453,
+      "firstName": "John",
+      "lastName": "Arnesen",
+      "fullName": "John Arnesen",
+      "refereeType": "Kampinspektør",
+      "orgName": "Strømsgodset Idrettsforening"
+    }
+  ]
+}

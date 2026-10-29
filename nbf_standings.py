@@ -1,8 +1,9 @@
 import requests
 import json
+import argparse
 
 URL = "https://api.app04.nbf.clh.no/api/v1/ta/TournamentStandings/"
-PARAMS = {"tournamentId": 439465, "ttl": 180}
+PARAMS = {"tournamentId": 439465, "ttl": 180, "JSONoutputFile": "data\\standings.json", "HTMLoutputFile": "data\\standings.html"}
 HEADERS = {"Accept": "application/json", "User-Agent": "Mozilla/5.0"}
 
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -129,6 +130,12 @@ def fetch_standings():
     resp = requests.get(URL, params=PARAMS, headers=HEADERS, timeout=10)
     resp.raise_for_status()
     data = resp.json()
+
+    # Write JSON data to a file
+    with open(PARAMS["JSONoutputFile"], "w", encoding="utf-8") as jsonfile:
+      json.dump(data, jsonfile)
+    print(f"JSON-data saved to {PARAMS['JSONoutputFile']}")
+
     if isinstance(data, list):
         return data
     for key in ("standings", "data", "results"):
@@ -163,7 +170,7 @@ def build_row(entry: dict) -> str:
           <td class="col-pts">{pts}</td>
         </tr>"""
 
-def generate_html(output_file="standings.html"):
+def generate_html(output_file=PARAMS["HTMLoutputFile"]):
     teams = fetch_standings()
     teams_sorted = sorted(teams, key=lambda x: x.get("position") or 999)
 
@@ -176,7 +183,27 @@ def generate_html(output_file="standings.html"):
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"Saved to {output_file}")
+    print(f"Standings for {PARAMS['tournamentId']} saved to {PARAMS['HTMLoutputFile']}")
 
 if __name__ == "__main__":
-    generate_html()
+      parser = argparse.ArgumentParser(
+        description="Henter tabellen for en bandyturnering fra NBFs API og lagrer den som HTML."
+      )
+      parser.add_argument(
+        "--tournamentId", type=int, default=0,
+        help="Turnerings-ID fra URL-fragmentet (standard: 0, som bruker PARAMS)"
+      )
+      parser.add_argument(
+        "--JSONoutput", default="data\\standings.json",
+        help="Filnavn for JSON-utdata (standard: data\\standings.json)"
+      )
+      parser.add_argument(
+        "--HTMLoutput", default="data\\standings.html",
+        help="Filnavn for HTML-utdata (standard: data\\standings.html)"
+     )
+      args = parser.parse_args()
+      PARAMS["tournamentId"] = args.tournamentId
+      PARAMS["JSONoutputFile"] = args.JSONoutput
+      PARAMS["HTMLoutputFile"] = args.HTMLoutput
+
+      generate_html()

@@ -111,7 +111,7 @@ def merge_incidents(incidents: list) -> list:
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch and display recent match incidents.")
-    parser.add_argument("match_id", type=int, help="Match ID to fetch incidents for")
+    parser.add_argument("--match_id", type=int, help="Match ID to fetch incidents for")
     parser.add_argument("--ttl", type=int, default=180, help="Cache TTL in seconds (default: 180)")
     parser.add_argument("--top", type=int, default=5, help="Number of most recent minute-groups to show (default: 5)")
     args = parser.parse_args()
